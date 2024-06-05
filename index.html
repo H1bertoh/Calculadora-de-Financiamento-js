@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Financiamento</title>
+    <link rel="stylesheet" type="text/css" href="trab.css">
+</head>
+<body>
+    <h1>Calculadora de Financiamento</h1>
+    <label for="propertyValue">Valor do Imóvel:</label><br>
+    <input type="number" id="propertyValue"><br>
+    <label for="downPayment">Entrada:</label><br>
+    <input type="number" id="downPayment"><br>
+    <label for="interestRate">Taxa de Juros:</label><br>
+    <input type="number" id="interestRate"><br>
+    <label for="loanTerm">Número de Parcelas:</label><br>
+    <input type="number" id="loanTerm"><br>
+    <button onclick="calcularFinanciamento()">Calcular</button>
+    <table id="amortizationTable">
+        <thead>
+            <tr>
+                <th>Parcela</th>
+                <th>Valor da Parcela</th>
+                <th>Saldo Devedor</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <div id="remaining"></div>
+    <script src="script.js"></script>
+</body>
+</html>
